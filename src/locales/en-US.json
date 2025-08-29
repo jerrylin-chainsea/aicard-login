@@ -1,0 +1,51 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "retry": "Retry"
+  },
+  "auth": {
+    "welcome": "Welcome",
+    "lineLogin": "Login with LINE",
+    "agreeToTerms": "I have read and agree to the Terms of Service and Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "lineDataAuth": "LINE Data Authorization",
+    "lineDataDescription": "AiCard needs to access your LINE basic data",
+    "basicProfile": "Basic Profile (Nickname, Avatar)",
+    "userId": "User ID",
+    "agreeAndContinue": "Agree and Continue"
+  },
+  "verification": {
+    "phoneVerification": "Phone Verification",
+    "phoneVerificationDescription": "Please enter your phone number to receive verification code",
+    "phoneNumber": "Phone Number",
+    "phoneNumberPlaceholder": "Please enter your phone number",
+    "sendVerificationCode": "Send Verification Code",
+    "verificationCodeSent": "Verification code sent",
+    "enterVerificationCode": "Enter Verification Code",
+    "verificationCodeDescription": "Verification code sent to {{phoneNumber}}",
+    "sixDigitCode": "6-digit verification code",
+    "verify": "Verify",
+    "resendVerificationCode": "Resend Verification Code",
+    "resendCountdown": "Resend Verification Code ({{countdown}})",
+    "verificationSuccess": "Verification Successful",
+    "verificationSuccessDescription": "Your phone number has been successfully verified\nPlease close the webpage and return to LINE",
+    "backToLine": "Back to LINE",
+    "verificationCodeIncorrect": "Verification code incorrect"
+  },
+  "errors": {
+    "phoneNumberInvalid": "Invalid phone number format",
+    "verificationCodeInvalid": "Invalid verification code format",
+    "verificationFailed": "Verification failed",
+    "sendCodeFailed": "Failed to send verification code",
+    "networkError": "Network connection error",
+    "unknownError": "Unknown error"
+  }
+}

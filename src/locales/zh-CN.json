@@ -1,0 +1,51 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "cancel": "取消",
+    "confirm": "确认",
+    "back": "返回",
+    "next": "下一步",
+    "submit": "提交",
+    "retry": "重试"
+  },
+  "auth": {
+    "welcome": "欢迎使用",
+    "lineLogin": "使用 LINE 登录",
+    "agreeToTerms": "我已阅读并同意 服务条款 和 隐私政策",
+    "termsOfService": "服务条款",
+    "privacyPolicy": "隐私政策",
+    "lineDataAuth": "LINE 资料授权",
+    "lineDataDescription": "AiCard 需要存取您的 LINE 基本资料",
+    "basicProfile": "基本个人资料 （昵称、头像）",
+    "userId": "用户识别 ID",
+    "agreeAndContinue": "同意并继续"
+  },
+  "verification": {
+    "phoneVerification": "手机号码验证",
+    "phoneVerificationDescription": "请输入您的手机号码以接收验证码",
+    "phoneNumber": "手机号码",
+    "phoneNumberPlaceholder": "请输入您的手机号码",
+    "sendVerificationCode": "发送验证码",
+    "verificationCodeSent": "已发送验证码",
+    "enterVerificationCode": "输入验证码",
+    "verificationCodeDescription": "验证码已发送至 {{phoneNumber}}",
+    "sixDigitCode": "6位数验证码",
+    "verify": "验证",
+    "resendVerificationCode": "重新发送验证码",
+    "resendCountdown": "重新发送验证码 ({{countdown}})",
+    "verificationSuccess": "验证成功",
+    "verificationSuccessDescription": "您的手机号码已成功验证\n请关闭网页回到 LINE",
+    "backToLine": "回到 LINE",
+    "verificationCodeIncorrect": "验证码不正确"
+  },
+  "errors": {
+    "phoneNumberInvalid": "手机号码格式不正确",
+    "verificationCodeInvalid": "验证码格式不正确",
+    "verificationFailed": "验证失败",
+    "sendCodeFailed": "发送验证码失败",
+    "networkError": "网络连接错误",
+    "unknownError": "未知错误"
+  }
+}

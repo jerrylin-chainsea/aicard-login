@@ -1,0 +1,276 @@
+/* 驗證碼頁面樣式 - 嚴格按照 Figma 設計稿實現 */
+.verification-code-page {
+  min-height: 100vh;
+  background: linear-gradient(90deg, rgba(16, 163, 233, 1) 0%, rgba(37, 100, 234, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 24px;
+  box-sizing: border-box;
+}
+
+/* 頂部導航區域 */
+.verification-code-page__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.verification-code-page__back-button {
+  background: none;
+  border: none;
+  font-family: 'Material Icons', sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  color: #000000;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.verification-code-page__back-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.verification-code-page__title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+.verification-code-page__spacer {
+  width: 40px;
+}
+
+/* 主要內容區域 */
+.verification-code-page__content {
+  width: 100%;
+  max-width: 336px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* 圖標和標題區域 */
+.verification-code-page__icon-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.verification-code-page__icon-circle {
+  width: 96px;
+  height: 96px;
+  background: #DCFCE7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verification-code-page__icon {
+  width: 30px;
+  height: 30px;
+  color: #00A53E;
+}
+
+.verification-code-page__subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+.verification-code-page__description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: #4B5563;
+  margin: 0;
+  text-align: center;
+}
+
+/* 驗證碼輸入區域 */
+.verification-code-page__input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.verification-code-page__input-label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+  color: #374151;
+  margin: 0;
+}
+
+.verification-code-page__code-inputs {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  align-self: stretch;
+  gap: 8px;
+}
+
+.verification-code-page__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.verification-code-page__code-input {
+  width: 100%;
+  height: 48px;
+  background: #F3F4F6;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  color: #000000;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.verification-code-page__code-input:focus {
+  border-color: #2561E8;
+}
+
+.verification-code-page__code-input.error {
+  border-color: #B3261E;
+  border-width: 2px;
+}
+
+.verification-code-page__code-input::placeholder {
+  color: #9CA3AF;
+}
+
+/* 錯誤訊息 */
+.verification-code-page__error-message {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.66;
+  letter-spacing: 3.33%;
+  color: #D32F2F;
+  padding: 3px 12px 0px;
+  margin-top: 4px;
+}
+
+/* 按鈕區域 */
+.verification-code-page__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.verification-code-page__verify-button {
+  width: 100%;
+  height: 48px;
+  background: #2263EB !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  color: #F5F5F5 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.verification-code-page__verify-button:disabled {
+  background: #BCC9ED !important;
+  cursor: not-allowed;
+}
+
+.verification-code-page__verify-button:not(:disabled):hover {
+  opacity: 0.9;
+}
+
+.verification-code-page__resend-button {
+  width: 100%;
+  height: 48px;
+  background: #FFFFFF !important;
+  border: 1px solid #E5E7EB !important;
+  border-radius: 8px !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  color: #2263EB !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.verification-code-page__resend-button:disabled {
+  color: #C7C7CC !important;
+  cursor: not-allowed;
+}
+
+.verification-code-page__resend-button:not(:disabled):hover {
+  background: #F8F9FA !important;
+}
+
+/* 響應式設計 - 移除固定寬度限制 */
+@media (max-width: 480px) {
+  .verification-code-page {
+    padding: 16px 16px;
+  }
+  
+  .verification-code-page__content {
+    padding: 20px;
+    max-width: 100%;
+  }
+  
+  .verification-code-page__code-inputs {
+    gap: 6px;
+  }
+  
+  .verification-code-page__code-input {
+    height: 44px;
+    padding: 12px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .verification-code-page__content {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .verification-code-page__content {
+    max-width: 450px;
+  }
+}
